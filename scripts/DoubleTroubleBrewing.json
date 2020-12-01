@@ -2,7 +2,7 @@
 {"id":"amnesiac"},
 {
 "id": "knight",
-"image": "https://raw.githubusercontent.com/pinual/JoshUniversity/master/Knight.png",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Knight.png",
 "edition": "custom",
 "firstNight": 20,
 "firstNightReminder": "You start knowing 2 players that are not the Demon.",
@@ -17,7 +17,7 @@
 },
 {
 "id": "astrologist",
-"image": "https://raw.githubusercontent.com/pinual/JoshUniversity/master/Astrologist.png",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Astrologist.png",
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
@@ -33,7 +33,7 @@
 {"id":"empath"},
 {
 "id": "villageidiot",
-"image": "https://raw.githubusercontent.com/pinual/JoshUniversity/master/VillageIdiot.png",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/VillageIdiot.png",
 "edition": "custom",
 "firstNight": 29,
 "firstNightReminder": "",
@@ -50,7 +50,7 @@
 {"id":"monk"},
 {
 "id": "farmer",
-"image": "https://raw.githubusercontent.com/pinual/JoshUniversity/master/Farmer.png",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Farmer.png",
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
@@ -65,7 +65,7 @@
 },
 {
 "id": "magician",
-"image": "https://raw.githubusercontent.com/pinual/JoshUniversity/master/MagiciansHat4.png",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Magician.png",
 "edition": "custom",
 "firstNight": 1,
 "firstNightReminder": "The Demon will see you as an extra minion, and the Minions will see you as an extra Demon.",
@@ -83,7 +83,7 @@
 {"id":"fool"},
 {
 "id": "snitch",
-"image": "https://raw.githubusercontent.com/pinual/JoshUniversity/master/Snitch.png",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Snitch.png",
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
@@ -102,7 +102,7 @@
 {"id":"baron"},{"id":"poisoner"},{"id":"witch"},
 {
 "id": "marionette",
-"image": "https://raw.githubusercontent.com/pinual/JoshUniversity/master/Marionette2.png",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Marionette.png",
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
@@ -118,7 +118,7 @@
 {"id":"imp"},
 {
 "id": "leech",
-"image": "https://raw.githubusercontent.com/pinual/JoshUniversity/master/Leech.png",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Leech.png",
 "edition": "custom",
 "firstNight": 8,
 "firstNightReminder": "Choose a player: they are poisoned and you die if & only if they die.",
@@ -133,7 +133,7 @@
 },
 {
 "id": "ojo",
-"image": "https://raw.githubusercontent.com/pinual/JoshUniversity/master/Ojo.png",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Ojo.png",
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
