@@ -150,6 +150,21 @@
 "ability": "Whoever loses, wins. Whoever wins, loses. Persists after death."
 },
 {
+"id": "insomniac",
+"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Insomniac.png",
+"edition": "custom",
+"firstNight": 0,
+"firstNightReminder": "",
+"otherNight": 60,
+"otherNightReminder": "You learn a character that died tonight.",
+"reminders": [],
+"remindersGlobal": [],
+"setup": false,
+"name": "Insomniac",
+"team": "minion",
+"ability": "Each night*, you learn a character that died tonight."
+},
+{
 "id": "king",
 "image": "https://raw.githubusercontent.com/pinual/botc/master/images/King.png",
 "edition": "custom",
