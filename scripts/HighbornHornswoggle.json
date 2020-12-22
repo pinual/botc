@@ -1,5 +1,11 @@
 [
 {
+"id": "_highbornhornswoggle",
+"name": "Highborn Hornswoggle",
+"author": "Cooper, Josh <jcooper@pinual.com>",
+"logo": "https://raw.githubusercontent.com/pinual/botc/master/images/HighbornHornswoggle.png"
+},
+{
 "id": "noble",
 "image": "https://raw.githubusercontent.com/pinual/botc/master/images/Noble.png",
 "edition": "custom",
@@ -181,12 +187,12 @@
 "firstNightReminder": "",
 "otherNight": 0,
 "otherNightReminder": "",
-"reminders": [],
+"reminders": ["Copying"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Copycat",
 "team": "minion",
-"ability": "Copies other living minion’s abilities. If there are no other living minions, can adopt any minion ability."
+"ability": "Copies another living minion’s ability. If there are no other living minions, storyteller gives you another minion ability."
 },
 {"id":"imp"},
 {"id":"po"},
@@ -205,5 +211,6 @@
 "name": "Ojo",
 "team": "demon",
 "ability": "Each night*, choose a character. They die. If that character isn’t in the game, a player dies."
-}
+},
+{"id": "harlot"}
 ]
