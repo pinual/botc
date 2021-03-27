@@ -1,1 +1,5 @@
-[{"id":"clockmaker"},{"id":"amnesiac"},{"id":"artist"},{"id":"seamstress"},{"id":"savant"},{"id":"fortune_teller"},{"id":"undertaker"},{"id":"chambermaid"},{"id":"dreamer"},{"id":"slayer"},{"id":"balloonist"},{"id":"cannibal"},{"id":"fisherman"},{"id":"mutant"},{"id":"lunatic"},{"id":"drunk"},{"id":"recluse"},{"id":"widow"},{"id":"goblin"},{"id":"baron"},{"id":"cerenovus"},{"id":"leviathan"},{"id":"apprentice"},{"id":"barista"},{"id":"bishop"},{"id":"thief"},{"id":"djinn"}]
+[{
+"id": "_meta",
+"name": "Red Tide"
+},
+{"id":"clockmaker"},{"id":"amnesiac"},{"id":"artist"},{"id":"seamstress"},{"id":"savant"},{"id":"fortune_teller"},{"id":"undertaker"},{"id":"chambermaid"},{"id":"dreamer"},{"id":"slayer"},{"id":"balloonist"},{"id":"cannibal"},{"id":"fisherman"},{"id":"mutant"},{"id":"lunatic"},{"id":"drunk"},{"id":"recluse"},{"id":"widow"},{"id":"goblin"},{"id":"baron"},{"id":"cerenovus"},{"id":"leviathan"},{"id":"apprentice"},{"id":"barista"},{"id":"bishop"},{"id":"thief"},{"id":"djinn"}]
