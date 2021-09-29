@@ -1,0 +1,32 @@
+[
+  {
+    "id": "_meta",
+    "name": "Poppygandist v2",
+    "logo": "https://i.imgur.com/h39an9p.png"
+  },
+  { "id": "bounty_hunter" },
+  { "id": "chef" },
+  { "id": "librarian" },
+  { "id": "pixie" },
+  { "id": "cannibal" },
+  { "id": "fortune_teller" },
+  { "id": "oracle" },
+  { "id": "monk" },
+  { "id": "town_crier" },
+  { "id": "savant" },
+  { "id": "juggler" },
+  { "id": "sage" },
+  { "id": "poppy_grower" },
+  { "id": "snitch" },
+  { "id": "mutant" },
+  { "id": "drunk" },
+  { "id": "lunatic" },
+  { "id": "evil_twin" },
+  { "id": "cerenovus" },
+  { "id": "baron" },
+  { "id": "marionette" },
+  { "id": "legion" },
+  { "id": "vigormortis" },
+  { "id": "imp" },
+  { "id": "vortox" }
+]

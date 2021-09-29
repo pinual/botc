@@ -1,0 +1,55 @@
+[
+  {
+    "id": "_meta",
+    "name": "Poppygandist",
+    "logo": "https://i.imgur.com/h39an9p.png"
+  },
+  { "id": "bounty_hunter" },
+  { "id": "chef" },
+  { "id": "librarian" },
+  { "id": "pixie" },
+  { "id": "mathematician" },
+  { "id": "fortune_teller" },
+  { "id": "oracle" },
+  { "id": "monk" },
+  { "id": "town_crier" },
+  { "id": "savant" },
+  { "id": "artist" },
+  { "id": "sage" },
+  { "id": "poppy_grower" },
+  { "id": "snitch" },
+  { "id": "mutant" },
+  { "id": "drunk" },
+  { "id": "lunatic" },
+  {
+    "id": "poisoner",
+    "team": "minion"
+  },
+  {
+    "id": "cerenovus",
+    "team": "minion"
+  },
+  {
+    "id": "baron",
+    "team": "minion"
+  },
+  {
+    "id": "marionette",
+    "image": "https://i.imgur.com/UyBtewc.png",
+    "edition": "custom",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [ "Is the Marionette" ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "name": "Marionette",
+    "team": "minion",
+    "ability": "You think you are a good character. You are poisoned & the Demon knows who you are. [You neighbour the Demon]"
+  },
+  { "id": "legion" },
+  { "id": "vigormortis" },
+  { "id": "imp" },
+  { "id": "vortox" }
+]
