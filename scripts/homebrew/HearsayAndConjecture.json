@@ -47,7 +47,7 @@
 "setup": false,
 "name": "Augur",
 "team": "townsfolk",
-"ability": "Each day, you may visit the Storyteller to guess a player's character."
+"ability": "Each day, you may visit the Storyteller to guess one player's character and are told yes or no."
 },
 {
 "id": "censor",
@@ -62,7 +62,7 @@
 "setup": false,
 "name": "Censor",
 "team": "townsfolk",
-"ability": "Each night, choose other 2 players: you learn how many of them are townsfolk."
+"ability": "Each night, choose 2 other players: you learn how many of them are townsfolk."
 },
 {
 "id": "physician",
@@ -272,7 +272,7 @@
 "setup": false,
 "name": "Mimic",
 "team": "minion",
-"ability": "Each night, choose a Townsfolk or Outsider and gain their ability until another is chosen."
+"ability": "Each night, choose a Townsfolk or Outsider and gain their ability until another is chosen.  If that character is in play, they are poisoned until another is chosen."
 },
 {
 "id": "harpy",
@@ -280,14 +280,14 @@
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
-"otherNight": 0,
-"otherNightReminder": "",
-"reminders": ["Twisted"],
+"otherNight": 40,
+"otherNightReminder": "Replace the Nominee token with a Twisted token",
+"reminders": ["Nominee", "Twisted"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Harpy",
 "team": "minion",
-"ability": "Each player you nominate is Twisted.  Players who are Twisted register as an evil demon for townsfolk abilities. When all other living players are Twisted, your team wins."
+"ability": "Each player you nominate becomes Twisted tonight.  Players who are Twisted register as an evil demon for townsfolk abilities. When all other living players are Twisted, your team wins."
 },
 {
 "id": "tormentor",
@@ -310,7 +310,7 @@
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
-"otherNight": 40,
+"otherNight": 41,
 "otherNightReminder": "If the Poltergeist died by execution any time before, they point to a player and that player dies.",
 "reminders": ["Executed", "Nominated"],
 "remindersGlobal": [],
@@ -325,14 +325,14 @@
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
-"otherNight": 41,
-"otherNightReminder": "Sleeper agent points to a player and they die. On their second night, inform them they are the Sleeper Agent, replace their token with the Sleeper Agent token and remove the Sleeping token.",
+"otherNight": 45,
+"otherNightReminder": "Sleeper agent points to a player and they die. On their second night, inform them they are the Sleeper Agent, replace their token with the Sleeper Agent token and remove the Infiltrating token.",
 "reminders": ["Die"],
-"remindersGlobal": ["Sleeping"],
+"remindersGlobal": ["Infiltrating"],
 "setup": true,
 "name": "Sleeper Agent",
 "team": "demon",
-"ability": "Each night*, choose a player: they die.  Until your second night, you are a Townsfolk and do not know your alignment.  Minions know you and learn three not-in-play characters."
+"ability": "Each night*, choose a player: they die.  Until your second night, you think you are, register as, and have the ability of a Townsfolk.  Minions learn three not-in-play characters."
 },
 {
 "id": "silvertongue",
@@ -340,7 +340,7 @@
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
-"otherNight": 42,
+"otherNight": 46,
 "otherNightReminder": "Silvertongue points to a player and they die.  If they nominated a player today, they point to a second player who dies. (Remove the nominated token if any.)",
 "reminders": ["Nominated"],
 "remindersGlobal": [],
@@ -355,14 +355,14 @@
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
-"otherNight": 43,
+"otherNight": 47,
 "otherNightReminder": "Bane points to a player and they die.  That player was drunk or poisoned, one of their good neighbors becomes poisoned.",
 "reminders": ["Die", "Poisoned"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Bane",
 "team": "demon",
-"ability": "Each night*, choose a player, they die.  If you chose a player who is drunk or poisoned, one of their good neighbors become poisoned."
+"ability": "Each night*, choose a player, they die.  If you chose a player who is drunk or poisoned, one of their good neighbors become poisoned. [1 Good player is poisoned]"
 },
 {
 "id": "xixu",
@@ -370,14 +370,14 @@
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
-"otherNight": 44,
+"otherNight": 48,
 "otherNightReminder": "Xixu points to a player and they die.",
 "reminders": [],
 "remindersGlobal": [],
 "setup": true,
 "name": "Xixu",
 "team": "demon",
-"ability": "Each night*, choose a player: they die.  You might register as an Outsider and Good.  Outsiders might register as a Demon and Evil. [+1 Outsider]"
+"ability": "Each night*, choose a player: they die.  You might register as a Good & as an Outsider.  Outsiders might register as Evil & as a Demon. [+1 Outsider]"
 },
 {
 "id": "alien",
@@ -392,7 +392,7 @@
 "setup": false,
 "name": "Alien",
 "team": "traveller",
-"ability": "You have no alignment.  You have an alternative victory condition."
+"ability": "You have no alignment and you have an alternative victory condition, even if you are dead.  Each day, you may visit the Storyteller to learn something true."
 },
 {
 "id": "ambassador",
