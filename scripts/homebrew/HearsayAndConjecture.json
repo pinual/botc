@@ -1,8 +1,7 @@
 [
 {
 "id": "_meta",
-"name": "Hearsay & Conjecture",
-"author": "Pinual"
+"logo": "https://raw.githubusercontent.com/pinual/botc/master/images/HearsayAndConjecture.png"
 },
 {
 "id": "patrician",
@@ -62,7 +61,7 @@
 "setup": false,
 "name": "Censor",
 "team": "townsfolk",
-"ability": "Each night, choose 2 other players: you learn how many of them are townsfolk."
+"ability": "Each night, choose 2 players (not yourself): you learn how many of them are townsfolk."
 },
 {
 "id": "physician",
@@ -84,15 +83,15 @@
 "image": "https://raw.githubusercontent.com/pinual/botc/master/images/Pontiff.png",
 "edition": "custom",
 "firstNight": 12,
-"firstNightReminder": "The Pontiff points to an Outsider or Minion character on the sheet. If that character is in the game, they are drunk until dusk.",
+"firstNightReminder": "The Pontiff points to an Outsider or Minion character on the sheet. If that character is in the game, they are drunk until dusk. If they're evil, wake them, show them the Pontiff token and point to the Pontiff.",
 "otherNight": 12,
-"otherNightReminder": "The Pontiff points to an Outsider or Minion character on the sheet. If that character is in the game, they are drunk until dusk.",
+"otherNightReminder": "The Pontiff points to an Outsider or Minion character on the sheet. If that character is in the game, they are drunk until dusk. If they're evil, wake them, show them the Pontiff token and point to the Pontiff.",
 "reminders": ["Drunk"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Pontiff",
 "team": "townsfolk",
-"ability": "Each night, choose an Outsider or Minion, they are drunk until dusk."
+"ability": "Each night, choose an Outsider or Minion (different to last night): they are drunk until dusk and if they are evil, they learn who you are."
 },
 {
 "id": "polymath",
@@ -131,13 +130,13 @@
 "firstNight": 0,
 "firstNightReminder": "",
 "otherNight": 73,
-"otherNightReminder": "If the Delator nominated a player and they were executed, show them the character token of the executed player.",
-"reminders": ["Nominee"],
+"otherNightReminder": "If the Delator nominated a player and they died by execution, wake them and they shows the head signal for yes/no.  If yes, show the character token of the player who died.  They against show the head signal for yes/no.  If yes, the player is alive.",
+"reminders": ["Nominee", "Resurrect", "No Ability"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Delator",
 "team": "townsfolk",
-"ability": "Each night*, if you nominated a player today and they are executed as a result, you learn their character."
+"ability": "Once per game, at night*, if you nominated a player today who died by execution, you may learn their character and then choose to bring them back to life."
 },
 {
 "id": "mortician",
@@ -177,12 +176,12 @@
 "firstNightReminder": "",
 "otherNight": 0,
 "otherNightReminder": "",
-"reminders": ["Nominee"],
+"reminders": ["Safe"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Herald",
 "team": "townsfolk",
-"ability": "If you nominate a player and vote to kill them, they do not require a majority to be executed."
+"ability": "When you nominate a player you may publicly state a Townsfolk: if they are that Townsfolk, they cannot die by execution today."
 },
 {
 "id": "envoy",
@@ -221,13 +220,13 @@
 "firstNight": 0,
 "firstNightReminder": "",
 "otherNight": 62,
-"otherNightReminder": "If The Blowhard did not nominate a player today, they die. (Remove the Nomianted token, if any)",
+"otherNightReminder": "If The Blowhard did not nominate a player today, their team loses. (Remove the Nomianted token, if any)",
 "reminders": ["Nominated"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Blowhard",
 "team": "outsider",
-"ability": "Each night*, if you did not nominate another living player today, you die."
+"ability": "Each night*, if you did not nominate another living player today, your team loses."
 },
 {
 "id": "courier",
@@ -237,7 +236,7 @@
 "firstNightReminder": "",
 "otherNight": 60,
 "otherNightReminder": "If the Courier died as the result of en evil player's nomination or ability, show that player the grimoire.",
-"reminders": ["Cause of Death"],
+"reminders": ["Cause of Death", "Drunk"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Courier",
@@ -281,13 +280,13 @@
 "firstNight": 0,
 "firstNightReminder": "",
 "otherNight": 40,
-"otherNightReminder": "Replace the Nominee token with a Twisted token",
-"reminders": ["Nominee", "Twisted"],
+"otherNightReminder": "Harpy points to a player.  If that player did not nominate today, put a Twisted token next to them.  Remove all Nominated reminder tokens.",
+"reminders": ["Nominated", "Twisted"],
 "remindersGlobal": [],
 "setup": true,
 "name": "Harpy",
 "team": "minion",
-"ability": "Each night*, if you nominated a player today they they become Twisted and the Envoy learns a player became Twisted.  Twisted register as Evil & as a Demon for Townsfolk abilities. If all other living players are Twisted, your team wins. [+1 Envoy]"
+"ability": "Each night*, choose a player.  If they did not nominate today, they become twisted.  Twisted register as Evil & as a Demon for Townsfolk abilities. If all other living players are Twisted, your team wins. 1 good player knows a Harpy is in play."
 },
 {
 "id": "tormentor",
@@ -295,7 +294,7 @@
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
-"otherNight": 0,
+"otherNight": 41,
 "otherNightReminder": "",
 "reminders": ["Mad"],
 "remindersGlobal": [],
@@ -310,14 +309,14 @@
 "edition": "custom",
 "firstNight": 0,
 "firstNightReminder": "",
-"otherNight": 41,
-"otherNightReminder": "If the Poltergeist died by execution any time before, they point to a player and that player dies.",
-"reminders": ["Executed", "Nominated"],
+"otherNight": 42,
+"otherNightReminder": "If no other player was executed today, the Poltergeister points to a player and they die.  Remove any Executed reminder tokens",
+"reminders": ["Executed", "Die"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Poltergeist",
 "team": "minion",
-"ability": "Each night*, if you died by execution, choose a player: If they nominated a player today, they die. If there are 3 players alive, you lose this ability."
+"ability": "Each night*, even if you are dead, if no other player was executed today, choose a player: they die."
 },
 {
 "id": "sleeperagent",
@@ -326,13 +325,13 @@
 "firstNight": 0,
 "firstNightReminder": "",
 "otherNight": 50,
-"otherNightReminder": "Sleeper agent points to a player and they die. On their second night, inform them they are the Sleeper Agent, replace their token with the Sleeper Agent token and remove the Infiltrating token.",
+"otherNightReminder": "Sleeper agent points to a player, they die, and remove the Infiltrating token.  If the Sleeper Agent gives 'No' head signal instead, place the Infiltrating token by them.",
 "reminders": ["Die"],
 "remindersGlobal": ["Infiltrating"],
 "setup": true,
 "name": "Sleeper Agent",
 "team": "demon",
-"ability": "Each night*, choose a player: they die. Until your 2nd night, you think you are, register as, and have the ability of a Townsfolk. Minions learn three not-in-play characters. On your 2nd night, you learn who the minions are."
+"ability": "Each night*, you may choose a player: they die. On your first night and each night you choose no-one, you register as, and have the ability of a not-in-play Townsfolk until you choose a player.  You start knowing this Townsfolk."
 },
 {
 "id": "silvertongue",
@@ -342,7 +341,7 @@
 "firstNightReminder": "",
 "otherNight": 51,
 "otherNightReminder": "Silvertongue points to a player and they die. If they nominated a player today, they point to a second player who dies. (Remove the nominated token if any.)",
-"reminders": ["Nominated"],
+"reminders": ["Die", "Nominated"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Silvertongue",
@@ -372,27 +371,12 @@
 "firstNightReminder": "",
 "otherNight": 53,
 "otherNightReminder": "Xixu points to a player and they die.",
-"reminders": [],
+"reminders": ["Die"],
 "remindersGlobal": [],
 "setup": true,
 "name": "Xixu",
 "team": "demon",
 "ability": "Each night*, choose a player: they die. You might register as a Good & as an Outsider. Outsiders might register as Evil & as a Demon. [+1 Outsider]"
-},
-{
-"id": "alien",
-"image": "https://raw.githubusercontent.com/pinual/botc/master/images/Alien.png",
-"edition": "custom",
-"firstNight": 0,
-"firstNightReminder": "",
-"otherNight": 0,
-"otherNightReminder": "",
-"reminders": [],
-"remindersGlobal": [],
-"setup": false,
-"name": "Alien",
-"team": "traveller",
-"ability": "You have no alignment and you have an alternative victory condition, even if you are dead. Each day, you may visit the Storyteller to learn something true."
 },
 {
 "id": "ambassador",
@@ -406,7 +390,7 @@
 "remindersGlobal": [],
 "setup": false,
 "name": "Ambassador",
-"team": "traveller",
+"team": "traveler",
 "ability": "Your votes count twice."
 },
 {
@@ -421,7 +405,7 @@
 "remindersGlobal": [],
 "setup": false,
 "name": "President",
-"team": "traveller",
+"team": "traveler",
 "ability": "Once per game, you may publicly pardon a player. If you do, they cannot be executed today."
 },
 {
@@ -436,7 +420,7 @@
 "remindersGlobal": [],
 "setup": false,
 "name": "Psychic",
-"team": "traveller",
+"team": "traveler",
 "ability": "Each night*: Choose a dead player. That player may vote without having or spending a token."
 },
 {
@@ -451,7 +435,7 @@
 "remindersGlobal": [],
 "setup": false,
 "name": "Snoop",
-"team": "traveller",
+"team": "traveler",
 "ability": "Snoop: Each night*, you may choose a player. If they are your alignment, learn their character. If you do this a second time, you die."
 }
 ]

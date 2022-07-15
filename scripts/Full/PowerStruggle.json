@@ -1,5 +1,5 @@
 [
-	{"id": "_meta", "name": "Power Struggle"},
+	{"id": "_meta", "name": "Power Struggle †"},
 	{"id":"bounty_hunter"},
 	{"id":"clockmaker"},
 	{"id":"investigator"},
@@ -11,7 +11,7 @@
 	{"id":"oracle"},
 	{"id":"nightwatchman"},
 	{"id":"professor"},
-	{"id":"atheist"},
+	{"id":"amnesiac"},
 	{"id":"alchemist"},
 	{"id":"fool"},
 	{"id":"puzzlemaster"},
