@@ -1,7 +1,9 @@
 [
 {
-"id": "_meta",
-"logo": "https://raw.githubusercontent.com/pinual/botc/master/images/HearsayAndConjecture.png"
+"id":"_meta",
+"name":"Hearsay & Conjecture",
+"author":"Pinual",
+"logo":"https://raw.githubusercontent.com/pinual/botc/master/images/HearsayAndConjecture.png"
 },
 {
 "id": "patrician",
