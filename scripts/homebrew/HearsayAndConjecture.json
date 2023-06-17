@@ -2,8 +2,8 @@
 {
 "id":"_meta",
 "name":"Hearsay & Conjecture",
-"author":"Pinual",
-"logo":"https://raw.githubusercontent.com/pinual/botc/master/images/HearsayAndConjecture.png"
+"almanac":"https://raw.githubusercontent.com/pinual/botc/master/rules/HearsayAndConjecture.pdf",
+"author":"Pinual"
 },
 {
 "id": "patrician",
@@ -48,7 +48,7 @@
 "setup": false,
 "name": "Augur",
 "team": "townsfolk",
-"ability": "Each day, you may visit the Storyteller to guess one player's character and are told yes or no."
+"ability": "Each day, you may visit the Storyteller to guess one player’s character.  One player always registers as No."
 },
 {
 "id": "censor",
@@ -100,9 +100,9 @@
 "image": "https://raw.githubusercontent.com/pinual/botc/master/images/Polymath.png",
 "edition": "custom",
 "firstNight": 11,
-"firstNightReminder": "",
+"firstNightReminder": "The Polymath gains a Townsfolk ability.  Wake them and show them the character token.  Do not active that Townsfolk ability until it would normally.",
 "otherNight": 11,
-"otherNightReminder": "",
+"otherNightReminder": "The Polymath gains a Townsfolk ability.  Wake them and show them the character token.  Do not active that Townsfolk ability until it would normally.",
 "reminders": [],
 "remindersGlobal": [],
 "setup": false,
@@ -183,7 +183,7 @@
 "setup": false,
 "name": "Herald",
 "team": "townsfolk",
-"ability": "When you nominate a player you may publicly state a Townsfolk: if they are that Townsfolk, they cannot die by execution today."
+"ability": "When you nominate another player you may publicly state a Townsfolk: if they are that Townsfolk, they cannot die by execution today."
 },
 {
 "id": "envoy",
@@ -228,7 +228,7 @@
 "setup": false,
 "name": "Blowhard",
 "team": "outsider",
-"ability": "Each night*, if you did not nominate another living player today, your team loses."
+"ability": "Each night except your first, if you did not nominate another living player today, your team loses."
 },
 {
 "id": "courier",
@@ -252,28 +252,28 @@
 "firstNight": 0,
 "firstNightReminder": "",
 "otherNight": 61,
-"otherNightReminder": "If the Nephilim died, the Demon may indicate No with their head or point to a Demon on the sheet to become. Show the Demon the You Are token with the chosen character.",
-"reminders": ["Demon Changable"],
+"otherNightReminder": "If the Nephilim died, the Demon may indicate No with their head, point to a Demon on the sheet to become, or point to a player. If a Demon: show them the You Are token with the chosen character.  If a player who is a minion: swap their characters and independently show each of them the You Are token and their new character.",
+"reminders": ["Died"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Nephilim",
 "team": "outsider",
-"ability": "When you die, the demon may choose to become a different demon tonight."
+"ability": "When you die, the demon may choose to become a different demon tonight or swap characters with a minion."
 },
 {
 "id": "mimic",
 "image": "https://raw.githubusercontent.com/pinual/botc/master/images/Mimic.png",
 "edition": "custom",
 "firstNight": 13,
-"firstNightReminder": "The Mimic points at a good character on the sheet. If that character is in play, place the Mimicing token next to them. If not, swap the Mimic's token with it and place the Is Mimic token by the Mimic.",
+"firstNightReminder": "The Mimic points at a good character on the sheet. If that character is in play, place the Poisoned token next to them. If not, swap the Mimic's token with it and place the Is Mimic token by the Mimic.",
 "otherNight": 13,
-"otherNightReminder": "The Mimic points at a good character on the sheet. If that character is in play, place the Mimicing token next to them. If not, swap the Mimic's token with it and place the Is Mimic token by the Mimic.",
-"reminders": ["Is Mimic", "Mimicing"],
+"otherNightReminder": "The Mimic points at a good character on the sheet. If that character is in play, place the Poisoned token next to them. If not, swap the Mimic's token with it and place the Is Mimic token by the Mimic.",
+"reminders": ["Is Mimic", "Poisoned"],
 "remindersGlobal": [],
 "setup": false,
 "name": "Mimic",
 "team": "minion",
-"ability": "Each night, choose a Townsfolk or Outsider and gain their ability until another is chosen. If that character is in play, they are poisoned until another is chosen."
+"ability": "Each night, choose a Townsfolk or Outsider.  If it is not in play, gain their ability until another is chosen. If that character is in play, they are poisoned until another is chosen"
 },
 {
 "id": "harpy",
@@ -297,13 +297,13 @@
 "firstNight": 0,
 "firstNightReminder": "",
 "otherNight": 41,
-"otherNightReminder": "",
+"otherNightReminder": "If any player has a Mad token, choose whether or not they die, then remove all Mad tokens.",
 "reminders": ["Mad"],
 "remindersGlobal": [],
 "setup": true,
 "name": "Tormentor",
 "team": "minion",
-"ability": "If any player is mad about being an Outsider, they might die tonight. [+1 Outsider]"
+"ability": "Each night*, if any player was mad about being an Outsider today, they might die. [+1 Outsider]"
 },
 {
 "id": "poltergeist",
